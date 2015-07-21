@@ -1,0 +1,71 @@
+html {
+	height: 100%;
+}
+
+body {
+	margin-top: 50px;
+	font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", sans-serif;
+	background-image: url(http://i.imgur.com/hG7FDtJ.gif);
+	background-size: 100% 100%;
+	color: white;
+}
+
+#hussiediv {
+	transform: rotate(45deg);
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	margin-bottom: -200px;
+
+	-webkit-animation: spinner 10s linear 0s infinite;
+	animation: spinner 10s linear 0s infinite;
+}
+
+@-webkit-keyframes spinner {
+        from {
+                -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+        }
+        to {
+                -webkit-transform: rotateX(-360deg) rotateY(-360deg) rotateZ(-360deg);
+        }
+}
+
+@keyframes spinner {
+        from {
+                transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+        }
+        to {
+                transform: rotateX(-360deg) rotateY(-360deg) rotateZ(-360deg);
+        }
+}
+
+#hussieimg {
+	width: 150px;
+	height: 400px;
+}
+
+#lmao {
+	top: 0;
+	right: 0;
+	border-radius: 27px;
+	padding: 15px;
+	color: white;
+	font-size: 2.5rem;
+	background-image: linear-gradient(#1ad6fd, #1d62f0);
+	display: inline-block;
+	float: right;
+	line-height: 1.0;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 15px;
+    line-height: 1.0;
+    text-align: right;
+}
+
+.serious {
+	font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
